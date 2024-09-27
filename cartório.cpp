@@ -83,7 +83,7 @@ int consulta()
 	
 	while(fgets(conteudo, 200, file)  != NULL)
 	{
-		printf("\nEssas são as informações do usuário: \n ");
+		printf("\n Essas são as informações do usuário: \n ");
 		printf("%s", conteudo);
 		printf("\n\n");
 	}
@@ -127,7 +127,8 @@ int main()
 	printf("Escolha a opção desejada do menu:\n\n"); //Início do menu
 	printf("\t 1 - Registrar aluno \n");
 	printf("\t 2 - consultar aluno \n");
-	printf("\t 3 - Deletar aluno? \n\n");  
+	printf("\t 3 - Deletar aluno?  \n");  
+	printf("\t 4 - sair do sistema \n");
 	printf("Selecione uma opção:"); //Fim do programa
     
     scanf("%d", &opcao);  //Armazenando as escolhas do usuário
@@ -147,6 +148,12 @@ int main()
 	    case 3:
 	    deletar();
 	    break;
+	    
+	    case 4:
+	    printf("Obrigado por ultilizar o sistema de registro EBAC. \n");
+	    return 0;
+	    break;
+	    	
 	    
 	    default:
 	    printf("Essa opção não está disponível\n");   
