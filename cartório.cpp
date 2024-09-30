@@ -160,6 +160,8 @@ int main()
 		system("pause");
 		break;//Fim da seleção
 	}
-	
+	    while (opcao != 4);
+
+        return 0;
     }
 }
